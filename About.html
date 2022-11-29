@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<title>About-This</title>
+</head>
+
+<body>
+
+
+<nav>  
+    <div>
+        <img src="./img/headphone.png" width="140px">
+    </div>
+
+    <div class="nav-menu">
+      <a href="main.html"><img src="./img/homelogo.png"></a>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">About</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="About.html">About This</a>
+              <a href="About-me.html">About Me</a>
+            </div>
+          </div>
+
+        <div class="dropdown-1">
+            <button onclick="myFunctions()" class="dropbtn-1">Blog</button>
+            <div id="myDropdowns" class="dropdown-content-1">
+                <a href="Blog-Diary.html">Diary</a>
+                <a href="Blog-Study.html">Study</a>
+                <a href="Blog-Daily.html">Daily</a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            let dropdowns = document.getElementsByClassName("dropdown-content");
+            let i;
+            for (i = 0; i < dropdowns.length; i++) {
+              let openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunctions() {
+          document.getElementById("myDropdowns").classList.toggle("show-1");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn-1')) {
+            let dropdownss = document.getElementsByClassName("dropdown-content-1");
+            let ii;
+            for (ii = 0; ii < dropdownss.length; ii++) {
+              let openDropdowns = dropdownss[ii];
+              if (openDropdowns.classList.contains('show-1')) {
+                openDropdowns.classList.remove('show-1');
+              }
+            }
+          }
+        }
+        </script>
+</nav>
+
+ <main>
+  <div class="about-this-main">
+    <img src="./img/quotation-marks.png">
+    <h1>
+      Abaout This Page
+    </h1>
+    <h3>
+      自分が作りたい世界をここで表しました。
+    </h3>
+  </div>
+</main>
+
+ 
+
+<footer>
+     
+</footer>
+</body>
+
+
+
+</html>
